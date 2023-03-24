@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	fmt.Println("Basics")
 	str := "Hello Q"
 	float := float64(100)
 	array := [3]int{1, 2, 3}
@@ -21,7 +22,7 @@ func main() {
 	fmt.Println(array)
 	fmt.Println(reflect.TypeOf(array))
 
-	for i := 1; i < 3; i++ {
+	for i := 0; i < len(array); i++ {
 		fmt.Println(array[i])
 		array[i] += i
 	}
@@ -50,6 +51,7 @@ func main() {
 	x := 42
 	x = 500
 	fmt.Println(x)
+	fmt.Println(smallie, "small")
 }
 
 func add(a int, b int) int {
